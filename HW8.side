@@ -1,0 +1,114 @@
+{
+  "id": "d7229d9b-18fc-4bd0-88ef-7dedbddb656a",
+  "version": "2.0",
+  "name": "HW8",
+  "url": "https://ruswizard.site/test",
+  "tests": [{
+    "id": "571df6bd-4e9e-4e40-ae1d-890b6ecdf322",
+    "name": "Test1",
+    "commands": []
+  }, {
+    "id": "46a7c586-b99c-413d-8bc3-ce1262a92939",
+    "name": "Rec",
+    "commands": [{
+      "id": "bffab3ef-60de-4fee-ae93-80afee55866f",
+      "comment": "",
+      "command": "open",
+      "target": "https://ruswizard.site/test/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba8910d3-f4a5-49ed-bd6a-06f2a99c1c26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2994d5e9-afc3-425c-a9a1-49423c77a898",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=test",
+      "targets": [
+        ["linkText=test", "linkText"],
+        ["css=#post-4138 .entry-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'test')]", "xpath:link"],
+        ["xpath=//article[@id='post-4138']/header/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/05/test-12/')]", "xpath:href"],
+        ["xpath=//article[2]/header/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aef4153e-1ca4-44fc-b894-7fd4007cb16c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.post-comment-link a",
+      "targets": [
+        ["css=.post-comment-link a", "css:finder"],
+        ["xpath=//article[@id='post-4138']/header/div/div[2]/ul/li[3]/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/05/test-12/#comments')]", "xpath:href"],
+        ["xpath=//li[3]/span[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5693c6a8-8d7c-4376-a495-503e3252318b",
+      "comment": "",
+      "command": "click",
+      "target": "id=site-content",
+      "targets": [
+        ["id=site-content", "id"],
+        ["css=#site-content", "css:finder"],
+        ["xpath=//main[@id='site-content']", "xpath:attributes"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0af523b8-ca50-4de8-8dcd-7c3d9222f213",
+      "comment": "",
+      "command": "click",
+      "target": "css=#post-4138 .post-comment-link a",
+      "targets": [
+        ["css=#post-4138 .post-comment-link a", "css:finder"],
+        ["xpath=//article[@id='post-4138']/header/div/div[2]/ul/li[3]/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/05/test-12/#comments')]", "xpath:href"],
+        ["xpath=//article[2]/header/div/div[2]/ul/li[3]/span[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c281e61-7d4c-4bb5-ac8d-262e4f177009",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.comment-form-comment > label",
+      "targets": [
+        ["css=.comment-form-comment > label", "css:finder"],
+        ["xpath=//form[@id='commentform']/p[2]/label", "xpath:idRelative"],
+        ["xpath=//p[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Комментарий')]", "xpath:innerText"]
+      ],
+      "value": "Комментарий"
+    }, {
+      "id": "fdc45824-8cc0-4721-800e-d8b9bdc79376",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.comment-form-comment > label",
+      "targets": [
+        ["css=.comment-form-comment > label", "css:finder"],
+        ["xpath=//form[@id='commentform']/p[2]/label", "xpath:idRelative"],
+        ["xpath=//p[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Комментарий')]", "xpath:innerText"]
+      ],
+      "value": "Комментарий"
+    }]
+  }],
+  "suites": [{
+    "id": "71cad63c-55c4-432c-aec7-0b3b48e751c1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["571df6bd-4e9e-4e40-ae1d-890b6ecdf322"]
+  }],
+  "urls": ["https://ruswizard.site/test"],
+  "plugins": []
+}
