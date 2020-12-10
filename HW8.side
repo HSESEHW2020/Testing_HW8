@@ -4,101 +4,1687 @@
   "name": "HW8",
   "url": "https://ruswizard.site/test",
   "tests": [{
-    "id": "571df6bd-4e9e-4e40-ae1d-890b6ecdf322",
-    "name": "Test1",
-    "commands": []
-  }, {
-    "id": "46a7c586-b99c-413d-8bc3-ce1262a92939",
-    "name": "Rec",
+    "id": "74772517-0c8f-43f1-8dc9-0f557be655ef",
+    "name": "Deferred",
     "commands": [{
-      "id": "bffab3ef-60de-4fee-ae93-80afee55866f",
+      "id": "db1f3d76-7737-4676-9a75-1209c711f490",
+      "comment": "",
+      "command": "open",
+      "target": "/test/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f62408bd-a7c2-45f7-ae06-1bf945ecc551",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "759fda11-131c-490d-a3b9-93d5abbf6272",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.widget_meta li:nth-child(1)",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "linkText"
+    }, {
+      "id": "4e390dca-547e-49fc-9521-43cbae1273b2",
+      "comment": "",
+      "command": "if",
+      "target": "${linkText} == 'Регистрация'",
+      "targets": [
+        ["css=.widget_meta li:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "Войти"
+    }, {
+      "id": "074bce25-29a2-433f-8c3c-4aabb9a1889a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa8f90c-de1e-47ac-a312-9f7014e43172",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ab5b86-d564-403a-b635-4c0e9d256119",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kotek_Myau"
+    }, {
+      "id": "6c99f5ea-8a6d-472f-94c2-5c790cdb80bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89790951-d82a-4210-81e7-2575a344465e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "wPJ3Kdey(py!m9iQ"
+    }, {
+      "id": "a43d0b1d-15e7-43a9-9136-af5b456893c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=wp-submit",
+      "targets": [
+        ["id=wp-submit", "id"],
+        ["name=wp-submit", "name"],
+        ["css=#wp-submit", "css:finder"],
+        ["xpath=//input[@id='wp-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca613ecd-90ee-4ba3-b220-d74ed56761e5",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "decb0e32-0ce6-4671-b4a9-c7ecb4a8b450",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d133f22b-cdaf-449d-acfd-efe8c2edeaf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wp-admin-bar-new-content .ab-label",
+      "targets": [
+        ["css=#wp-admin-bar-new-content .ab-label", "css:finder"],
+        ["xpath=//li[@id='wp-admin-bar-new-content']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc7533e0-d531-4b1e-b654-04c32c379616",
+      "comment": "",
+      "command": "type",
+      "target": "id=post-title-0",
+      "targets": [
+        ["id=post-title-0", "id"],
+        ["css=#post-title-0", "css:finder"],
+        ["xpath=//textarea[@id='post-title-0']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Артем - точно не робот"
+    }, {
+      "id": "20cc37f0-7604-43af-af83-a00148223b85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-post-post-schedule__toggle",
+      "targets": [
+        ["css=.edit-post-post-schedule__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Немедленно')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6971c34c-c0b6-4295-a7d2-1474bd9c4b79",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.edit-post-post-schedule__toggle",
+      "targets": [
+        ["css=.edit-post-post-schedule__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Немедленно')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "960b97d0-4f73-40f5-81c0-07fe2c5488ee",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.edit-post-post-schedule__toggle",
+      "targets": [
+        ["css=.edit-post-post-schedule__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Немедленно')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "149fe9dd-547f-41c4-8c10-fd3350c3a709",
+      "comment": "",
+      "command": "click",
+      "target": "css=.components-datetime__time-field-minutes-input",
+      "targets": [
+        ["css=.components-datetime__time-field-minutes-input", "css:finder"],
+        ["xpath=//input[@value='57']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div[2]/div/div/div/div/div/div/div/div/fieldset[2]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ab23f59-59fa-49b8-92d4-1beab6f03b65",
+      "comment": "",
+      "command": "storeValue",
+      "target": "css=.components-datetime__time-field-minutes-input",
+      "targets": [
+        ["css=.components-datetime__time-field-minutes-input", "css:finder"],
+        ["xpath=//input[@value='33']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div[2]/div/div/div/div/div/div/div/div/fieldset[2]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "currentMinute"
+    }, {
+      "id": "a35cf4c0-72b9-444c-bfb3-e8d8520e4edf",
+      "comment": "",
+      "command": "if",
+      "target": "${currentMinute} < 59",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b1ec8ff-dbf5-4e43-813f-0ac8722fb090",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseInt(${currentMinute}) +1",
+      "targets": [],
+      "value": "currentMinute"
+    }, {
+      "id": "d16626b7-658d-42f3-8f4c-65e338e5b1d4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.components-datetime__time-field-minutes-input",
+      "targets": [
+        ["css=.components-datetime__time-field-minutes-input", "css:finder"],
+        ["xpath=//input[@value='57']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div[2]/div/div/div/div/div/div/div/div/fieldset[2]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${currentMinute}"
+    }, {
+      "id": "58be52b2-6104-481d-b44f-928a178ed8f2",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c755b7bd-66de-4008-ac3b-509acbc6ad44",
+      "comment": "",
+      "command": "type",
+      "target": "css=.components-datetime__time-field-minutes-input",
+      "targets": [],
+      "value": "00"
+    }, {
+      "id": "b21cda95-5201-4d4f-87a2-5ef450fb90c1",
+      "comment": "",
+      "command": "storeValue",
+      "target": "css=.components-datetime__time-field-hours-input",
+      "targets": [
+        ["css=.components-datetime__time-field-hours-input", "css:finder"],
+        ["xpath=//input[@value='21']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div[2]/div/div/div/div/div/div/div/div/fieldset[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "currentHour"
+    }, {
+      "id": "9840fcb7-f160-4c98-882d-1e3038bd2846",
+      "comment": "",
+      "command": "if",
+      "target": "${currentHour} < 23",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee223e6c-63e5-47b9-8606-1429c444b03f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseInt(${currentHour}) +1",
+      "targets": [],
+      "value": "currentHour"
+    }, {
+      "id": "9f079b48-517c-449a-b9b7-7bb7fa4b2412",
+      "comment": "",
+      "command": "type",
+      "target": "css=.components-datetime__time-field-hours-input",
+      "targets": [],
+      "value": "${currentHour}"
+    }, {
+      "id": "e506715c-2edf-4d0b-baa5-73dce7b041bc",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a92f38c-868d-4d9f-aa58-b75a6411eb2e",
+      "comment": "Assume no one tests this on the New Year night...",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b29ec76-f0ff-4195-9ba2-2c0eb49d18ff",
+      "comment": "",
+      "command": "type",
+      "target": "css=.components-datetime__time-field-hours-input",
+      "targets": [],
+      "value": "00"
+    }, {
+      "id": "89d6bd61-f335-4cfe-a5c5-72509e3f53b5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68fe84f9-a2ec-40ee-9f50-a4dff46e2a3d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cc4fd60-ce8f-493c-8486-d8be0b403118",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-panel__toggle",
+      "targets": [
+        ["css=.editor-post-publish-panel__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b12fa767-d3e8-4792-8e65-440b8c13662e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-button",
+      "targets": [
+        ["css=.editor-post-publish-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[28]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7820d9db-81e6-4049-8452-4ff8da142922",
+      "comment": "проверка создания записи с отложенной публикацией;",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4c87457a-03a3-4e15-968f-666320c7505c",
+    "name": "Create public post/user",
+    "commands": [{
+      "id": "153e94a0-3197-434d-8808-01db9eff78c7",
       "comment": "",
       "command": "open",
       "target": "https://ruswizard.site/test/",
       "targets": [],
       "value": ""
     }, {
-      "id": "ba8910d3-f4a5-49ed-bd6a-06f2a99c1c26",
+      "id": "ab47edcd-0465-4df7-88f3-4bbed42c4d01",
       "comment": "",
       "command": "setWindowSize",
-      "target": "550x691",
+      "target": "1083x909",
       "targets": [],
       "value": ""
     }, {
-      "id": "2994d5e9-afc3-425c-a9a1-49423c77a898",
+      "id": "759fda11-131c-490d-a3b9-93d5abbf6272",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.widget_meta li:nth-child(1)",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "linkText"
+    }, {
+      "id": "4e390dca-547e-49fc-9521-43cbae1273b2",
+      "comment": "",
+      "command": "if",
+      "target": "${linkText} == 'Регистрация'",
+      "targets": [
+        ["css=.widget_meta li:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "Войти"
+    }, {
+      "id": "074bce25-29a2-433f-8c3c-4aabb9a1889a",
       "comment": "",
       "command": "click",
-      "target": "linkText=test",
+      "target": "linkText=Войти",
       "targets": [
-        ["linkText=test", "linkText"],
-        ["css=#post-4138 .entry-title > a", "css:finder"],
-        ["xpath=//a[contains(text(),'test')]", "xpath:link"],
-        ["xpath=//article[@id='post-4138']/header/div/h2/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/05/test-12/')]", "xpath:href"],
-        ["xpath=//article[2]/header/div/h2/a", "xpath:position"],
-        ["xpath=//a[contains(.,'test')]", "xpath:innerText"]
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "aef4153e-1ca4-44fc-b894-7fd4007cb16c",
+      "id": "2fa8f90c-de1e-47ac-a312-9f7014e43172",
       "comment": "",
       "command": "click",
-      "target": "css=.post-comment-link a",
+      "target": "id=user_login",
       "targets": [
-        ["css=.post-comment-link a", "css:finder"],
-        ["xpath=//article[@id='post-4138']/header/div/div[2]/ul/li[3]/span[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/05/test-12/#comments')]", "xpath:href"],
-        ["xpath=//li[3]/span[2]/a", "xpath:position"]
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "5693c6a8-8d7c-4376-a495-503e3252318b",
+      "id": "07ab5b86-d564-403a-b635-4c0e9d256119",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kotek_Myau"
+    }, {
+      "id": "6c99f5ea-8a6d-472f-94c2-5c790cdb80bc",
       "comment": "",
       "command": "click",
-      "target": "id=site-content",
+      "target": "id=user_pass",
       "targets": [
-        ["id=site-content", "id"],
-        ["css=#site-content", "css:finder"],
-        ["xpath=//main[@id='site-content']", "xpath:attributes"],
-        ["xpath=//main", "xpath:position"]
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "0af523b8-ca50-4de8-8dcd-7c3d9222f213",
+      "id": "89790951-d82a-4210-81e7-2575a344465e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "wPJ3Kdey(py!m9iQ"
+    }, {
+      "id": "a43d0b1d-15e7-43a9-9136-af5b456893c2",
       "comment": "",
       "command": "click",
-      "target": "css=#post-4138 .post-comment-link a",
+      "target": "id=wp-submit",
       "targets": [
-        ["css=#post-4138 .post-comment-link a", "css:finder"],
-        ["xpath=//article[@id='post-4138']/header/div/div[2]/ul/li[3]/span[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/05/test-12/#comments')]", "xpath:href"],
-        ["xpath=//article[2]/header/div/div[2]/ul/li[3]/span[2]/a", "xpath:position"]
+        ["id=wp-submit", "id"],
+        ["name=wp-submit", "name"],
+        ["css=#wp-submit", "css:finder"],
+        ["xpath=//input[@id='wp-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "5c281e61-7d4c-4bb5-ac8d-262e4f177009",
+      "id": "ca613ecd-90ee-4ba3-b220-d74ed56761e5",
       "comment": "",
-      "command": "verifyText",
-      "target": "css=.comment-form-comment > label",
-      "targets": [
-        ["css=.comment-form-comment > label", "css:finder"],
-        ["xpath=//form[@id='commentform']/p[2]/label", "xpath:idRelative"],
-        ["xpath=//p[2]/label", "xpath:position"],
-        ["xpath=//label[contains(.,'Комментарий')]", "xpath:innerText"]
-      ],
-      "value": "Комментарий"
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
     }, {
-      "id": "fdc45824-8cc0-4721-800e-d8b9bdc79376",
+      "id": "c8bdba32-73cc-477b-b691-6341821f0d2c",
       "comment": "",
-      "command": "assertText",
-      "target": "css=.comment-form-comment > label",
+      "command": "click",
+      "target": "linkText=Управление сайтом",
       "targets": [
-        ["css=.comment-form-comment > label", "css:finder"],
-        ["xpath=//form[@id='commentform']/p[2]/label", "xpath:idRelative"],
-        ["xpath=//p[2]/label", "xpath:position"],
-        ["xpath=//label[contains(.,'Комментарий')]", "xpath:innerText"]
+        ["linkText=Управление сайтом", "linkText"],
+        ["css=.widget_meta li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Управление сайтом')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-admin/')])[15]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Управление сайтом')]", "xpath:innerText"]
       ],
-      "value": "Комментарий"
+      "value": ""
+    }, {
+      "id": "decb0e32-0ce6-4671-b4a9-c7ecb4a8b450",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aabe320b-0b20-469f-b278-7ecd86e41caa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wp-admin-bar-new-content .ab-label",
+      "targets": [
+        ["css=#wp-admin-bar-new-content .ab-label", "css:finder"],
+        ["xpath=//li[@id='wp-admin-bar-new-content']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67eba7cb-3e30-4e39-9ffe-81f3e5a39806",
+      "comment": "",
+      "command": "type",
+      "target": "id=post-title-0",
+      "targets": [
+        ["id=post-title-0", "id"],
+        ["css=#post-title-0", "css:finder"],
+        ["xpath=//textarea[@id='post-title-0']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "asdsdgefdgerhgdg"
+    }, {
+      "id": "8def2d75-813b-484b-b54b-2d0a2ee7d4a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-panel__toggle",
+      "targets": [
+        ["css=.editor-post-publish-panel__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19b8e2c4-5fba-4f84-8b0e-447e3311553b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-button",
+      "targets": [
+        ["css=.editor-post-publish-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[28]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4972e547-3db9-4876-8e12-5dca17175f80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-secondary:nth-child(1)",
+      "targets": [
+        ["css=.is-secondary:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Просмотреть запись')])[2]", "xpath:link"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/2020/12/10/asdsdgefdgerhgdg/')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "83f74ff9-c889-4685-a848-03d541d109df",
+    "name": "Create public test/guest",
+    "commands": [{
+      "id": "1dd4105d-a537-4159-aff5-b0654d2ac2bd",
+      "comment": "",
+      "command": "open",
+      "target": "https://ruswizard.site/test/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c3d74a5-56fd-4ed6-969a-f1a2040e7a3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1083x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "759fda11-131c-490d-a3b9-93d5abbf6272",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.widget_meta li:nth-child(1)",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "linkText"
+    }, {
+      "id": "4e390dca-547e-49fc-9521-43cbae1273b2",
+      "comment": "",
+      "command": "if",
+      "target": "${linkText} == 'Регистрация'",
+      "targets": [
+        ["css=.widget_meta li:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "Войти"
+    }, {
+      "id": "074bce25-29a2-433f-8c3c-4aabb9a1889a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa8f90c-de1e-47ac-a312-9f7014e43172",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ab5b86-d564-403a-b635-4c0e9d256119",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kotek_Myau"
+    }, {
+      "id": "6c99f5ea-8a6d-472f-94c2-5c790cdb80bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89790951-d82a-4210-81e7-2575a344465e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "wPJ3Kdey(py!m9iQ"
+    }, {
+      "id": "a43d0b1d-15e7-43a9-9136-af5b456893c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=wp-submit",
+      "targets": [
+        ["id=wp-submit", "id"],
+        ["name=wp-submit", "name"],
+        ["css=#wp-submit", "css:finder"],
+        ["xpath=//input[@id='wp-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca613ecd-90ee-4ba3-b220-d74ed56761e5",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8bdba32-73cc-477b-b691-6341821f0d2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Управление сайтом",
+      "targets": [
+        ["linkText=Управление сайтом", "linkText"],
+        ["css=.widget_meta li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Управление сайтом')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-admin/')])[15]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Управление сайтом')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "decb0e32-0ce6-4671-b4a9-c7ecb4a8b450",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c607c56-b0e4-4ff8-93f3-7712a0f98cac",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wp-admin-bar-new-content .ab-label",
+      "targets": [
+        ["css=#wp-admin-bar-new-content .ab-label", "css:finder"],
+        ["xpath=//li[@id='wp-admin-bar-new-content']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b172032e-4fe9-4dea-9fe1-978e3674ff9d",
+      "comment": "",
+      "command": "type",
+      "target": "id=post-title-0",
+      "targets": [
+        ["id=post-title-0", "id"],
+        ["css=#post-title-0", "css:finder"],
+        ["xpath=//textarea[@id='post-title-0']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "tatata"
+    }, {
+      "id": "6fe1148e-377b-4f38-85f6-f8cfc1352c2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-panel__toggle",
+      "targets": [
+        ["css=.editor-post-publish-panel__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffd04cb9-d94c-43ad-98a6-d5ba6eac5d9c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.editor-post-publish-panel__toggle",
+      "targets": [
+        ["css=.editor-post-publish-panel__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03d9aec4-58b5-4ed4-b9e0-19a64cefbc85",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.editor-post-publish-panel__toggle",
+      "targets": [
+        ["css=.editor-post-publish-panel__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b79313ad-cfc9-45c5-80dd-0bc386a502da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-button",
+      "targets": [
+        ["css=.editor-post-publish-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[28]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63ab36f8-606c-4596-9693-93f53fccf6f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-post-fullscreen-mode-close > svg",
+      "targets": [
+        ["css=.edit-post-fullscreen-mode-close > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc87f1a8-8da5-4535-b004-c3ab6de5b2cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Testing example",
+      "targets": [
+        ["linkText=Testing example", "linkText"],
+        ["css=#wp-admin-bar-site-name > .ab-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Testing example')]", "xpath:link"],
+        ["xpath=//li[@id='wp-admin-bar-site-name']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Testing example')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c8bd772-e2b2-41f0-8860-004f480fdbaf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выйти",
+      "targets": [
+        ["linkText=Выйти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Выйти')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php?action=logout&_wpnonce=9516179179')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbec6ef8-fc93-4268-a727-11dd9b73261d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=← Назад к сайту «Testing example»",
+      "targets": [
+        ["linkText=← Назад к сайту «Testing example»", "linkText"],
+        ["css=#backtoblog > a", "css:finder"],
+        ["xpath=//a[contains(text(),'← Назад к сайту «Testing example»')]", "xpath:link"],
+        ["xpath=//p[@id='backtoblog']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/')])[3]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'← Назад к сайту «Testing example»')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ac99177-18f7-4034-943c-8440e59bb775",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=tatata",
+      "targets": [
+        ["linkText=tatata", "linkText"],
+        ["css=#post-6061 .entry-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'tatata')]", "xpath:link"],
+        ["xpath=//article[@id='post-6061']/header/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/10/tatata/')]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'tatata')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2ec33931-c1d0-4c24-a6c2-314846140b6f",
+    "name": "Create private post/user",
+    "commands": [{
+      "id": "f8381bed-8aa5-466b-bc63-a8d9f824c582",
+      "comment": "",
+      "command": "open",
+      "target": "https://ruswizard.site/test/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdeab580-384c-473a-b291-38d7a0a45393",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1083x909",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "759fda11-131c-490d-a3b9-93d5abbf6272",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.widget_meta li:nth-child(1)",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "linkText"
+    }, {
+      "id": "4e390dca-547e-49fc-9521-43cbae1273b2",
+      "comment": "",
+      "command": "if",
+      "target": "${linkText} == 'Регистрация'",
+      "targets": [
+        ["css=.widget_meta li:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "Войти"
+    }, {
+      "id": "074bce25-29a2-433f-8c3c-4aabb9a1889a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa8f90c-de1e-47ac-a312-9f7014e43172",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ab5b86-d564-403a-b635-4c0e9d256119",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kotek_Myau"
+    }, {
+      "id": "6c99f5ea-8a6d-472f-94c2-5c790cdb80bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89790951-d82a-4210-81e7-2575a344465e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "wPJ3Kdey(py!m9iQ"
+    }, {
+      "id": "a43d0b1d-15e7-43a9-9136-af5b456893c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=wp-submit",
+      "targets": [
+        ["id=wp-submit", "id"],
+        ["name=wp-submit", "name"],
+        ["css=#wp-submit", "css:finder"],
+        ["xpath=//input[@id='wp-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca613ecd-90ee-4ba3-b220-d74ed56761e5",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8bdba32-73cc-477b-b691-6341821f0d2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Управление сайтом",
+      "targets": [
+        ["linkText=Управление сайтом", "linkText"],
+        ["css=.widget_meta li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Управление сайтом')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-admin/')])[15]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Управление сайтом')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "decb0e32-0ce6-4671-b4a9-c7ecb4a8b450",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcc274ec-99e8-49dc-a3a8-70a86cddf1dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wp-admin-bar-new-content .ab-label",
+      "targets": [
+        ["css=#wp-admin-bar-new-content .ab-label", "css:finder"],
+        ["xpath=//li[@id='wp-admin-bar-new-content']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b5165e9-47ba-4e20-9d65-1e4bae903558",
+      "comment": "",
+      "command": "type",
+      "target": "id=post-title-0",
+      "targets": [
+        ["id=post-title-0", "id"],
+        ["css=#post-title-0", "css:finder"],
+        ["xpath=//textarea[@id='post-title-0']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "dadasdsasd"
+    }, {
+      "id": "aca84a9f-323d-4372-ad21-b683051245d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-panel__toggle",
+      "targets": [
+        ["css=.editor-post-publish-panel__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b812485-5fec-48ea-8979-c536727cb98c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-panel__prepublish > .components-panel__body:nth-child(3) .components-button",
+      "targets": [
+        ["css=.editor-post-publish-panel__prepublish > .components-panel__body:nth-child(3) .components-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[30]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div[2]/div/div[2]/h2/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/h2/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9b63177-bb5b-4f6f-b888-2676d0d6b227",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f90488f1-2616-450c-a9b3-b163bcd66b95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-visibility__choice:nth-child(3) > .editor-post-visibility__dialog-label",
+      "targets": [
+        ["css=.editor-post-visibility__choice:nth-child(3) > .editor-post-visibility__dialog-label", "css:finder"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div[2]/div/div[2]/fieldset/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Личное')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "906880ba-7c44-4dff-b5a7-f67428ba3d00",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Вы хотите опубликовать запись как личную?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "175270c0-67ef-46b9-a6a4-d9892587a506",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e68cd76-2b27-483f-92aa-0b9333d8edf5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-secondary:nth-child(1)",
+      "targets": [
+        ["css=.is-secondary:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Просмотреть запись')])[2]", "xpath:link"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/2020/12/10/dadasdsasd/')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e0304b2d-f45c-411c-9f7b-bf75ea83f43d",
+    "name": "Create private post/guest",
+    "commands": [{
+      "id": "dcfb0d4a-b3d2-4d4c-8805-87240ebda192",
+      "comment": "",
+      "command": "open",
+      "target": "https://ruswizard.site/test/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0058516e-f3b4-4ccc-874d-c60bf7ec3c7e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1083x910",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "759fda11-131c-490d-a3b9-93d5abbf6272",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.widget_meta li:nth-child(1)",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "linkText"
+    }, {
+      "id": "4e390dca-547e-49fc-9521-43cbae1273b2",
+      "comment": "",
+      "command": "if",
+      "target": "${linkText} == 'Регистрация'",
+      "targets": [
+        ["css=.widget_meta li:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "Войти"
+    }, {
+      "id": "074bce25-29a2-433f-8c3c-4aabb9a1889a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa8f90c-de1e-47ac-a312-9f7014e43172",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ab5b86-d564-403a-b635-4c0e9d256119",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kotek_Myau"
+    }, {
+      "id": "6c99f5ea-8a6d-472f-94c2-5c790cdb80bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89790951-d82a-4210-81e7-2575a344465e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "wPJ3Kdey(py!m9iQ"
+    }, {
+      "id": "a43d0b1d-15e7-43a9-9136-af5b456893c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=wp-submit",
+      "targets": [
+        ["id=wp-submit", "id"],
+        ["name=wp-submit", "name"],
+        ["css=#wp-submit", "css:finder"],
+        ["xpath=//input[@id='wp-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca613ecd-90ee-4ba3-b220-d74ed56761e5",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8bdba32-73cc-477b-b691-6341821f0d2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Управление сайтом",
+      "targets": [
+        ["linkText=Управление сайтом", "linkText"],
+        ["css=.widget_meta li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Управление сайтом')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-admin/')])[15]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Управление сайтом')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "decb0e32-0ce6-4671-b4a9-c7ecb4a8b450",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2b580e2-4db2-4067-b5eb-afe6abf20f4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wp-admin-bar-new-content .ab-label",
+      "targets": [
+        ["css=#wp-admin-bar-new-content .ab-label", "css:finder"],
+        ["xpath=//li[@id='wp-admin-bar-new-content']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Добавить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bfe1ce5-7e73-4a93-bc56-0fccdf5df029",
+      "comment": "",
+      "command": "type",
+      "target": "id=post-title-0",
+      "targets": [
+        ["id=post-title-0", "id"],
+        ["css=#post-title-0", "css:finder"],
+        ["xpath=//textarea[@id='post-title-0']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "asdadasgredfaewrgqa3erhewrh3aqefhserhqa3h"
+    }, {
+      "id": "00aeae1b-bac8-4589-9f06-8a37c8cc7cbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-post-post-visibility__toggle",
+      "targets": [
+        ["css=.edit-post-post-visibility__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Открыто')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11ec18b9-9220-4a03-bbac-2b04392bb0a2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.edit-post-post-visibility__toggle",
+      "targets": [
+        ["css=.edit-post-post-visibility__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Открыто')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "797334e3-e2f3-4905-b904-ee18f29a1193",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.edit-post-post-visibility__toggle",
+      "targets": [
+        ["css=.edit-post-post-visibility__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Открыто')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2081fd9d-ffe0-4294-8e0e-2863619c6c37",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f81272e-d4be-4a01-a6ec-efd998c1250a",
+      "comment": "",
+      "command": "click",
+      "target": "id=editor-post-private-0",
+      "targets": [
+        ["id=editor-post-private-0", "id"],
+        ["css=#editor-post-private-0", "css:finder"],
+        ["xpath=//input[@id='editor-post-private-0']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div[2]/div/div/div/div/div/div/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f32f893-9d64-47ca-86f4-b25094a4737d",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Вы хотите опубликовать запись как личную?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28305a7b-fbbb-4021-bb52-3cdad86e9eb1",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69b7c728-67fa-433e-96f4-9fd76f5c4e65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.interface-complementary-area-header",
+      "targets": [
+        ["css=.interface-complementary-area-header", "css:finder"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b07e69f8-9ef2-4bc0-ab72-487e9c8e6f04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.edit-post-fullscreen-mode-close path",
+      "targets": [
+        ["css=.edit-post-fullscreen-mode-close path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff389244-c607-4c6a-becb-4a340fc76311",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Testing example",
+      "targets": [
+        ["linkText=Testing example", "linkText"],
+        ["css=#wp-admin-bar-site-name > .ab-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Testing example')]", "xpath:link"],
+        ["xpath=//li[@id='wp-admin-bar-site-name']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Testing example')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ec17486-253e-40e6-b3fe-8b7edf2eea8f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выйти",
+      "targets": [
+        ["linkText=Выйти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Выйти')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php?action=logout&_wpnonce=e9a2103fb1')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d56140c-d3a4-49df-91e7-ad3cbcb307fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=← Назад к сайту «Testing example»",
+      "targets": [
+        ["linkText=← Назад к сайту «Testing example»", "linkText"],
+        ["css=#backtoblog > a", "css:finder"],
+        ["xpath=//a[contains(text(),'← Назад к сайту «Testing example»')]", "xpath:link"],
+        ["xpath=//p[@id='backtoblog']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/')])[3]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'← Назад к сайту «Testing example»')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "09350a5a-2bb8-4240-ae23-2607b6515266",
+    "name": "Delete",
+    "commands": [{
+      "id": "bb44eba7-728d-4c93-b133-01aa6613d762",
+      "comment": "",
+      "command": "open",
+      "target": "https://ruswizard.site/test/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a874a8f8-13e3-4847-992b-58f1d7543f9a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "759fda11-131c-490d-a3b9-93d5abbf6272",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.widget_meta li:nth-child(1)",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "linkText"
+    }, {
+      "id": "4e390dca-547e-49fc-9521-43cbae1273b2",
+      "comment": "",
+      "command": "if",
+      "target": "${linkText} == 'Регистрация'",
+      "targets": [
+        ["css=.widget_meta li:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": "Войти"
+    }, {
+      "id": "074bce25-29a2-433f-8c3c-4aabb9a1889a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.widget_meta li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-login.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa8f90c-de1e-47ac-a312-9f7014e43172",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ab5b86-d564-403a-b635-4c0e9d256119",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_login",
+      "targets": [
+        ["id=user_login", "id"],
+        ["name=log", "name"],
+        ["css=#user_login", "css:finder"],
+        ["xpath=//input[@id='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kotek_Myau"
+    }, {
+      "id": "6c99f5ea-8a6d-472f-94c2-5c790cdb80bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89790951-d82a-4210-81e7-2575a344465e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["name=pwd", "name"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "wPJ3Kdey(py!m9iQ"
+    }, {
+      "id": "a43d0b1d-15e7-43a9-9136-af5b456893c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=wp-submit",
+      "targets": [
+        ["id=wp-submit", "id"],
+        ["name=wp-submit", "name"],
+        ["css=#wp-submit", "css:finder"],
+        ["xpath=//input[@id='wp-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca613ecd-90ee-4ba3-b220-d74ed56761e5",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "decb0e32-0ce6-4671-b4a9-c7ecb4a8b450",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1bc9db8-127f-4fe9-8d98-00a3d941e919",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wp-admin-bar-new-content .ab-label",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8340d9b-2d64-4f85-a675-60d28b6b155f",
+      "comment": "",
+      "command": "type",
+      "target": "id=post-title-0",
+      "targets": [
+        ["id=post-title-0", "id"],
+        ["css=#post-title-0", "css:finder"],
+        ["xpath=//textarea[@id='post-title-0']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "DeleteTest"
+    }, {
+      "id": "73f69129-bb0c-45c6-8a3d-4189c7a32218",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-panel__toggle",
+      "targets": [
+        ["css=.editor-post-publish-panel__toggle", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02c48f07-2341-4926-afcf-34e48d292f8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-publish-button",
+      "targets": [
+        ["css=.editor-post-publish-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[28]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c480ab5f-a87e-44c0-ba8d-b21839dc8c32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-secondary:nth-child(1)",
+      "targets": [
+        ["css=.is-secondary:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Просмотреть запись')])[2]", "xpath:link"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/2020/12/10/deletetest/')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4eee249a-0473-4fbc-9d2e-729bac861a91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.post-edit a",
+      "targets": [
+        ["css=.post-edit a", "css:finder"],
+        ["xpath=//article[@id='post-6582']/div[2]/div/ul/li/span[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/wp-admin/post.php?post=6582&action=edit')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/span[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe1c0fb9-328c-4a51-9300-65757bc77adb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editor-post-trash",
+      "targets": [
+        ["css=.editor-post-trash", "css:finder"],
+        ["xpath=(//button[@type='button'])[22]", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Переместить в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24c0e0f9-44fe-4ee5-ba73-99a2b20a17bf",
+      "comment": "",
+      "command": "open",
+      "target": "https://ruswizard.site/test/",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
@@ -107,7 +1693,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["571df6bd-4e9e-4e40-ae1d-890b6ecdf322"]
+    "tests": []
   }],
   "urls": ["https://ruswizard.site/test"],
   "plugins": []
