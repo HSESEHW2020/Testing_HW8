@@ -2073,16 +2073,18 @@
       ],
       "value": ""
     }, {
-      "id": "0dbd16c9-0d82-4cfe-a989-632e9e6440e3",
+      "id": "4d8385c8-d835-4a6f-8d11-ae7f9140b2d5",
       "comment": "",
       "command": "click",
-      "target": "css=.is-secondary:nth-child(1)",
+      "target": "linkText=Просмотреть запись",
       "targets": [
+        ["linkText=Просмотреть запись", "linkText"],
         ["css=.is-secondary:nth-child(1)", "css:finder"],
-        ["xpath=(//a[contains(text(),'Просмотреть запись')])[2]", "xpath:link"],
+        ["xpath=//a[contains(text(),'Просмотреть запись')]", "xpath:link"],
         ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/2020/12/11/commentarytest/')])[5]", "xpath:href"],
-        ["xpath=//div[2]/div/div[2]/div[2]/a", "xpath:position"]
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/2020/12/11/commentarytest-10/')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Просмотреть запись')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
