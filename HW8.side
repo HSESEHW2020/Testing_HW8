@@ -923,6 +923,20 @@
       "target": "css=.post-${id}",
       "targets": [],
       "value": ""
+    }, {
+      "id": "1400fcc8-d519-4449-b85c-f822ccf4a818",
+      "comment": "",
+      "command": "click",
+      "target": "css=.post-${id}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4be8ece-93c2-4267-9dec-cbd7a7dc3294",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.post-edit a",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "2ec33931-c1d0-4c24-a6c2-314846140b6f",
