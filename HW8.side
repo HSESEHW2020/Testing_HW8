@@ -7,6 +7,13 @@
     "id": "74772517-0c8f-43f1-8dc9-0f557be655ef",
     "name": "Deferred",
     "commands": [{
+      "id": "7820d9db-81e6-4049-8452-4ff8da142922",
+      "comment": "проверка создания записи с отложенной публикацией;",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "db1f3d76-7737-4676-9a75-1209c711f490",
       "comment": "",
       "command": "open",
@@ -160,37 +167,11 @@
         ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "Артем - точно не робот"
+      "value": "Selenium - игрушка дьявола"
     }, {
       "id": "20cc37f0-7604-43af-af83-a00148223b85",
       "comment": "",
       "command": "click",
-      "target": "css=.edit-post-post-schedule__toggle",
-      "targets": [
-        ["css=.edit-post-post-schedule__toggle", "css:finder"],
-        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
-        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div[2]/div/button", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div[2]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Немедленно')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "6971c34c-c0b6-4295-a7d2-1474bd9c4b79",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.edit-post-post-schedule__toggle",
-      "targets": [
-        ["css=.edit-post-post-schedule__toggle", "css:finder"],
-        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
-        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div[2]/div/button", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div[2]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Немедленно')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "960b97d0-4f73-40f5-81c0-07fe2c5488ee",
-      "comment": "",
-      "command": "mouseOut",
       "target": "css=.edit-post-post-schedule__toggle",
       "targets": [
         ["css=.edit-post-post-schedule__toggle", "css:finder"],
@@ -305,6 +286,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "6b29ec76-f0ff-4195-9ba2-2c0eb49d18ff",
+      "comment": "",
+      "command": "type",
+      "target": "css=.components-datetime__time-field-hours-input",
+      "targets": [],
+      "value": "00"
+    }, {
       "id": "5a92f38c-868d-4d9f-aa58-b75a6411eb2e",
       "comment": "Assume no one tests this on the New Year night...",
       "command": "",
@@ -312,12 +300,31 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "6b29ec76-f0ff-4195-9ba2-2c0eb49d18ff",
+      "id": "b80ca827-bcda-448a-b5db-b35d61e61d48",
+      "comment": "",
+      "command": "storeValue",
+      "target": "css=.components-datetime__time-field-day-input",
+      "targets": [
+        ["css=.components-datetime__time-field-day-input", "css:finder"],
+        ["xpath=//input[@value='11']", "xpath:attributes"],
+        ["xpath=//div[@id='editor']/div/div/div[2]/div/div/div/div/div/div/div/div/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "dayOfMonth"
+    }, {
+      "id": "b0a6b3e9-56ad-4097-8fce-21c358154c0a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseInt(${dayOfMonth}) +1",
+      "targets": [],
+      "value": "dayOfMonth"
+    }, {
+      "id": "c58fb6e9-6629-491c-ad13-9908bdc4ad58",
       "comment": "",
       "command": "type",
-      "target": "css=.components-datetime__time-field-hours-input",
+      "target": "css=.components-datetime__time-field-day-input",
       "targets": [],
-      "value": "00"
+      "value": "${dayOfMonth}"
     }, {
       "id": "89d6bd61-f335-4cfe-a5c5-72509e3f53b5",
       "comment": "",
@@ -332,6 +339,13 @@
       "target": "",
       "targets": [],
       "value": ""
+    }, {
+      "id": "d18aed6d-94e0-40cd-bfc9-52f732b95cd4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "const alink = document.getElementsByClassName(\"components-external-link edit-post-post-link__link\")[0].text; return (new RegExp(\"p=(\\\\\\d+)\")).exec(alink)[1];",
+      "targets": [],
+      "value": "id"
     }, {
       "id": "8cc4fd60-ce8f-493c-8486-d8be0b403118",
       "comment": "",
@@ -358,10 +372,31 @@
       ],
       "value": ""
     }, {
-      "id": "7820d9db-81e6-4049-8452-4ff8da142922",
-      "comment": "проверка создания записи с отложенной публикацией;",
-      "command": "",
-      "target": "",
+      "id": "06244260-43b8-49ea-b9f5-050227dd7fe4",
+      "comment": "",
+      "command": "open",
+      "target": "https://ruswizard.site/test/wp-admin/edit.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35e4ea40-702f-43bd-aceb-0d8f0c09de42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.future",
+      "targets": [
+        ["linkText=Запланированные (7)", "linkText"],
+        ["css=.future > a", "css:finder"],
+        ["xpath=//div[@id='wpbody-content']/div[4]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'edit.php?post_status=future&post_type=post')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Запланированные (7)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4781a7b9-eeaa-4e40-b04a-5a8473ccae77",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.post-${id}",
       "targets": [],
       "value": ""
     }]
