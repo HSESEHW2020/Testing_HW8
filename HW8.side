@@ -807,6 +807,13 @@
       ],
       "value": "TestPublicGuest"
     }, {
+      "id": "7c37ca38-075f-415d-86e7-de9b5f3035ec",
+      "comment": "",
+      "command": "executeScript",
+      "target": "const alink = document.getElementsByClassName(\"components-external-link edit-post-post-link__link\")[0].text; return (new RegExp(\"p=(\\\\\\d+)\")).exec(alink)[1];",
+      "targets": [],
+      "value": "id"
+    }, {
       "id": "6fe1148e-377b-4f38-85f6-f8cfc1352c2c",
       "comment": "",
       "command": "click",
@@ -912,10 +919,10 @@
     }, {
       "id": "cd7361e1-60a7-438c-b016-2c909e218187",
       "comment": "",
-      "command": "assertText",
-      "target": "css=.entry-title",
+      "command": "assertElementPresent",
+      "target": "css=.post-${id}",
       "targets": [],
-      "value": "TestPublicGuest"
+      "value": ""
     }]
   }, {
     "id": "2ec33931-c1d0-4c24-a6c2-314846140b6f",
@@ -1313,35 +1320,16 @@
       ],
       "value": "TestValue"
     }, {
+      "id": "09054405-6082-409c-b492-3e961de529ae",
+      "comment": "",
+      "command": "executeScript",
+      "target": "const alink = document.getElementsByClassName(\"components-external-link edit-post-post-link__link\")[0].text; return (new RegExp(\"p=(\\\\\\d+)\")).exec(alink)[1];",
+      "targets": [],
+      "value": "id"
+    }, {
       "id": "00aeae1b-bac8-4589-9f06-8a37c8cc7cbe",
       "comment": "",
       "command": "click",
-      "target": "css=.edit-post-post-visibility__toggle",
-      "targets": [
-        ["css=.edit-post-post-visibility__toggle", "css:finder"],
-        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
-        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div/div/button", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Открыто')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "11ec18b9-9220-4a03-bbac-2b04392bb0a2",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.edit-post-post-visibility__toggle",
-      "targets": [
-        ["css=.edit-post-post-visibility__toggle", "css:finder"],
-        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
-        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[2]/div/div[3]/div/div/div/button", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Открыто')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "797334e3-e2f3-4905-b904-ee18f29a1193",
-      "comment": "",
-      "command": "mouseOut",
       "target": "css=.edit-post-post-visibility__toggle",
       "targets": [
         ["css=.edit-post-post-visibility__toggle", "css:finder"],
@@ -1452,9 +1440,9 @@
       "id": "36fa516e-ddc6-41f1-9113-660696e8fc3c",
       "comment": "",
       "command": "verifyElementNotPresent",
-      "target": "linkText=Личное:TestValue",
+      "target": "css=.post-${id}",
       "targets": [],
-      "value": "Личное:TestValue"
+      "value": ""
     }]
   }, {
     "id": "09350a5a-2bb8-4240-ae23-2607b6515266",
