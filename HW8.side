@@ -584,16 +584,39 @@
       ],
       "value": ""
     }, {
-      "id": "4972e547-3db9-4876-8e12-5dca17175f80",
+      "id": "1f1740d0-455e-48ce-9d95-475c5d22310a",
       "comment": "",
       "command": "click",
-      "target": "css=.is-secondary:nth-child(1)",
+      "target": "css=.edit-post-fullscreen-mode-close > svg",
       "targets": [
-        ["css=.is-secondary:nth-child(1)", "css:finder"],
-        ["xpath=(//a[contains(text(),'Просмотреть запись')])[2]", "xpath:link"],
-        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/2020/12/10/asdsdgefdgerhgdg/')])[4]", "xpath:href"],
-        ["xpath=//div[2]/div[2]/a", "xpath:position"]
+        ["css=.edit-post-fullscreen-mode-close > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc212ec6-530f-465c-aabd-0a92727cbed4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Testing example",
+      "targets": [
+        ["linkText=Testing example", "linkText"],
+        ["css=#wp-admin-bar-site-name > .ab-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Testing example')]", "xpath:link"],
+        ["xpath=//li[@id='wp-admin-bar-site-name']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Testing example')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e83fcf11-0543-4488-bb2e-b04245fd1945",
+      "comment": "",
+      "command": "click",
+      "target": "css=#post-7519 .entry-title",
+      "targets": [
+        ["css=#post-7519 .entry-title", "css:finder"],
+        ["xpath=//article[@id='post-7519']/header/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'TestPublic')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -2397,63 +2420,6 @@
         ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/11/geektest/')]", "xpath:href"],
         ["xpath=//h2/a", "xpath:position"],
         ["xpath=//a[contains(.,'GeekTest')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "c05f0ae9-2364-42f5-8b01-4c5ffc844ba3",
-      "comment": "",
-      "command": "click",
-      "target": "id=comment",
-      "targets": [
-        ["id=comment", "id"],
-        ["name=comment", "name"],
-        ["css=#comment", "css:finder"],
-        ["xpath=//textarea[@id='comment']", "xpath:attributes"],
-        ["xpath=//form[@id='commentform']/p[2]/textarea", "xpath:idRelative"],
-        ["xpath=//textarea", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "d3fbd999-bb74-4a48-a6e9-fb7f3d12fc48",
-      "comment": "",
-      "command": "type",
-      "target": "id=comment",
-      "targets": [
-        ["id=comment", "id"],
-        ["name=comment", "name"],
-        ["css=#comment", "css:finder"],
-        ["xpath=//textarea[@id='comment']", "xpath:attributes"],
-        ["xpath=//form[@id='commentform']/p[2]/textarea", "xpath:idRelative"],
-        ["xpath=//textarea", "xpath:position"]
-      ],
-      "value": "geek"
-    }, {
-      "id": "fafb557f-a1e7-4189-b60a-e6c84fe28db2",
-      "comment": "",
-      "command": "click",
-      "target": "id=submit",
-      "targets": [
-        ["id=submit", "id"],
-        ["name=submit", "name"],
-        ["css=#submit", "css:finder"],
-        ["xpath=//input[@id='submit']", "xpath:attributes"],
-        ["xpath=//form[@id='commentform']/p[7]/input", "xpath:idRelative"],
-        ["xpath=//p[7]/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "b5c58a81-88e6-4e9f-9c30-6a921e5bdd24",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=← Назад",
-      "targets": [
-        ["linkText=← Назад", "linkText"],
-        ["css=a", "css:finder"],
-        ["xpath=//a[contains(text(),'← Назад')]", "xpath:link"],
-        ["xpath=//body[@id='error-page']/p/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'javascript:history.back()')]", "xpath:href"],
-        ["xpath=//a", "xpath:position"],
-        ["xpath=//a[contains(.,'← Назад')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
