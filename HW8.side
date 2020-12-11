@@ -209,14 +209,14 @@
       "id": "a35cf4c0-72b9-444c-bfb3-e8d8520e4edf",
       "comment": "",
       "command": "if",
-      "target": "${currentMinute} < 59",
+      "target": "${currentMinute} < 58",
       "targets": [],
       "value": ""
     }, {
       "id": "5b1ec8ff-dbf5-4e43-813f-0ac8722fb090",
       "comment": "",
       "command": "executeScript",
-      "target": "return parseInt(${currentMinute}) +1",
+      "target": "return parseInt(${currentMinute}) + 2",
       "targets": [],
       "value": "currentMinute"
     }, {
