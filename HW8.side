@@ -2123,7 +2123,7 @@
         ["xpath=//form[@id='commentform']/p[2]/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "Commentary\\n"
+      "value": "a geek over here"
     }, {
       "id": "e6167109-a16a-40a4-94e5-6cfed1fff717",
       "comment": "",
