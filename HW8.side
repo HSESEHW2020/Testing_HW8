@@ -546,6 +546,13 @@
       ],
       "value": ""
     }, {
+      "id": "d099770a-ee84-43f5-b22a-90852fe4d8f5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"TestPublicV2\";",
+      "targets": [],
+      "value": "articleTitle"
+    }, {
       "id": "67eba7cb-3e30-4e39-9ffe-81f3e5a39806",
       "comment": "",
       "command": "type",
@@ -557,7 +564,14 @@
         ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "TestPublic"
+      "value": "${articleTitle}"
+    }, {
+      "id": "332096e4-6de5-4d78-8257-f912e4c52f47",
+      "comment": "",
+      "command": "executeScript",
+      "target": "const alink = document.getElementsByClassName(\"components-external-link edit-post-post-link__link\")[0].text; return (new RegExp(\"p=(\\\\\\d+)\")).exec(alink)[1];",
+      "targets": [],
+      "value": "id"
     }, {
       "id": "8def2d75-813b-484b-b54b-2d0a2ee7d4a8",
       "comment": "",
@@ -608,10 +622,17 @@
       ],
       "value": ""
     }, {
+      "id": "cd0fefe8-a22a-4073-b09b-b806c3d76f39",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.post-${id}",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "e83fcf11-0543-4488-bb2e-b04245fd1945",
       "comment": "",
       "command": "click",
-      "target": "css=#post-7519 .entry-title",
+      "target": "css=#post-${id} .entry-title",
       "targets": [
         ["css=#post-7519 .entry-title", "css:finder"],
         ["xpath=//article[@id='post-7519']/header/div/h2", "xpath:idRelative"],
@@ -625,7 +646,7 @@
       "command": "assertText",
       "target": "css=.entry-title",
       "targets": [],
-      "value": "TestPublic"
+      "value": "${articleTitle}"
     }]
   }, {
     "id": "83f74ff9-c889-4685-a848-03d541d109df",
