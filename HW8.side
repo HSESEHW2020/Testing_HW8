@@ -549,16 +549,39 @@
       ],
       "value": ""
     }, {
-      "id": "4972e547-3db9-4876-8e12-5dca17175f80",
+      "id": "1f1740d0-455e-48ce-9d95-475c5d22310a",
       "comment": "",
       "command": "click",
-      "target": "css=.is-secondary:nth-child(1)",
+      "target": "css=.edit-post-fullscreen-mode-close > svg",
       "targets": [
-        ["css=.is-secondary:nth-child(1)", "css:finder"],
-        ["xpath=(//a[contains(text(),'Просмотреть запись')])[2]", "xpath:link"],
-        ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div[3]/div/div/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/2020/12/10/asdsdgefdgerhgdg/')])[4]", "xpath:href"],
-        ["xpath=//div[2]/div[2]/a", "xpath:position"]
+        ["css=.edit-post-fullscreen-mode-close > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc212ec6-530f-465c-aabd-0a92727cbed4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Testing example",
+      "targets": [
+        ["linkText=Testing example", "linkText"],
+        ["css=#wp-admin-bar-site-name > .ab-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Testing example')]", "xpath:link"],
+        ["xpath=//li[@id='wp-admin-bar-site-name']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ruswizard.site/test/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Testing example')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e83fcf11-0543-4488-bb2e-b04245fd1945",
+      "comment": "",
+      "command": "click",
+      "target": "css=#post-7519 .entry-title",
+      "targets": [
+        ["css=#post-7519 .entry-title", "css:finder"],
+        ["xpath=//article[@id='post-7519']/header/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'TestPublic')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
