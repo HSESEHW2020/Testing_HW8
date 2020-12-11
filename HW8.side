@@ -1620,7 +1620,7 @@
         ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "DeleteTestNext"
+      "value": "DeleteTest"
     }, {
       "id": "4f669ba6-8398-4310-98e1-dd3bb93a46a5",
       "comment": "",
@@ -1628,13 +1628,6 @@
       "target": "const alink = document.getElementsByClassName(\"components-external-link edit-post-post-link__link\")[0].text; return (new RegExp(\"p=(\\\\\\d+)\")).exec(alink)[1];",
       "targets": [],
       "value": "id"
-    }, {
-      "id": "33a2c06d-69a5-4f08-813a-4f63969af1dd",
-      "comment": "",
-      "command": "executeScript",
-      "target": "console.log(\"id=\", ${id});",
-      "targets": [],
-      "value": ""
     }, {
       "id": "fc3e5934-7195-4aed-8884-709bb70e999e",
       "comment": "",
@@ -1703,21 +1696,6 @@
       "command": "verifyElementNotPresent",
       "target": "css=.post-${id}",
       "targets": [],
-      "value": ""
-    }, {
-      "id": "ada1cc7b-c212-44b9-ac9e-594c4fa89f31",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "linkText=DeleteTestNext",
-      "targets": [
-        ["linkText=DeleteTest", "linkText"],
-        ["css=#post-7243 .entry-title > a", "css:finder"],
-        ["xpath=//a[contains(text(),'DeleteTest')]", "xpath:link"],
-        ["xpath=//article[@id='post-7243']/header/div/h2/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/11/deletetest-6/')]", "xpath:href"],
-        ["xpath=//h2/a", "xpath:position"],
-        ["xpath=//a[contains(.,'DeleteTest')]", "xpath:innerText"]
-      ],
       "value": ""
     }]
   }, {
