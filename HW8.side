@@ -550,7 +550,7 @@
         ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "asdsdgefdgerhgdg"
+      "value": "TestPublic"
     }, {
       "id": "8def2d75-813b-484b-b54b-2d0a2ee7d4a8",
       "comment": "",
@@ -589,6 +589,13 @@
         ["xpath=//div[2]/div[2]/a", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "22c22998-4b11-4ae9-a854-03b538562039",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.entry-title",
+      "targets": [],
+      "value": "TestPublic"
     }]
   }, {
     "id": "83f74ff9-c889-4685-a848-03d541d109df",
@@ -768,7 +775,7 @@
         ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "tatata"
+      "value": "TestPublicGuest"
     }, {
       "id": "6fe1148e-377b-4f38-85f6-f8cfc1352c2c",
       "comment": "",
@@ -873,20 +880,12 @@
       ],
       "value": ""
     }, {
-      "id": "3ac99177-18f7-4034-943c-8440e59bb775",
+      "id": "cd7361e1-60a7-438c-b016-2c909e218187",
       "comment": "",
-      "command": "click",
-      "target": "linkText=tatata",
-      "targets": [
-        ["linkText=tatata", "linkText"],
-        ["css=#post-6061 .entry-title > a", "css:finder"],
-        ["xpath=//a[contains(text(),'tatata')]", "xpath:link"],
-        ["xpath=//article[@id='post-6061']/header/div/h2/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://ruswizard.site/test/2020/12/10/tatata/')]", "xpath:href"],
-        ["xpath=//h2/a", "xpath:position"],
-        ["xpath=//a[contains(.,'tatata')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "command": "assertText",
+      "target": "css=.entry-title",
+      "targets": [],
+      "value": "TestPublicGuest"
     }]
   }, {
     "id": "2ec33931-c1d0-4c24-a6c2-314846140b6f",
@@ -1066,7 +1065,7 @@
         ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "dadasdsasd"
+      "value": "TestPrivate"
     }, {
       "id": "aca84a9f-323d-4372-ad21-b683051245d9",
       "comment": "",
@@ -1138,6 +1137,13 @@
         ["xpath=//div[2]/div[2]/a", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "1c73841c-4495-4418-9efe-166a8bef8230",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.entry-title",
+      "targets": [],
+      "value": "Личное: TestPrivate"
     }]
   }, {
     "id": "e0304b2d-f45c-411c-9f7b-bf75ea83f43d",
@@ -1317,7 +1323,7 @@
         ["xpath=//div[@id='editor']/div/div/div/div/div[2]/div/div[4]/div[2]/div/div/div[2]/div[2]/div/div/textarea", "xpath:idRelative"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "asdadasgredfaewrgqa3erhewrh3aqefhserhqa3h"
+      "value": "TestValue"
     }, {
       "id": "00aeae1b-bac8-4589-9f06-8a37c8cc7cbe",
       "comment": "",
@@ -1454,6 +1460,13 @@
         ["xpath=//a[contains(.,'← Назад к сайту «Testing example»')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "36fa516e-ddc6-41f1-9113-660696e8fc3c",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "linkText=Личное:TestValue",
+      "targets": [],
+      "value": "Личное:TestValue"
     }]
   }, {
     "id": "09350a5a-2bb8-4240-ae23-2607b6515266",
